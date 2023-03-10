@@ -1,2 +1,3 @@
-# rianns.github.io
+# Rigene Salang Portfolio
+
 Portfolio website
