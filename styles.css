@@ -1,1 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background-color: #1E2629;
+}
+
+.nav {
+  z-index: 1000;
+  background-color: #CBCDC0;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+}
+.nav__link {
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+  font-size: 3rem;
+  list-style-type: none;
+  height: 10vh;
+  line-height: 0.76;
+  display: flex;
+  align-items: end;
+}
+.nav__link a:link {
+  text-decoration: none;
+  color: #1E2629;
+}
+.nav__link a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  text-shadow: 5px 5px white;
+}
+.nav__link a:visited {
+  text-decoration: none;
+  color: #1E2629;
+}
+.nav__link a:active {
+  text-decoration: none;
+  transform: translate(5px, 5px);
+  color: #1E2629;
+  text-shadow: none;
+}
+
+.main-section {
+  margin-top: 10vh;
+}
+.main-section__landing-page {
+  height: 80vh;
+  width: 100vw;
+  color: #CBCDC0;
+  background-color: #1E2629;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-section__landing-page h1 {
+  font-size: 5rem;
+}
+.main-section__landing-page p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+}
+.main-section__skills {
+  height: 80vh;
+  width: 100vw;
+  color: #CBCDC0;
+  background-color: #1E2629;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-section__skills div {
+  height: 500px;
+  width: 500px;
+}
+.main-section__skills .skills__icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 10px;
+}
+.main-section__skills i {
+  border: 2px solid #CBCDC0;
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-section__skills i:hover {
+  box-shadow: 5px 5px white;
+}
+.main-section__projects {
+  height: 80vh;
+  width: 100vw;
+  color: #CBCDC0;
+  background-color: #1E2629;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-section__projects--portfolio {
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.main-section__projects--portfolio img {
+  border: 10px solid #CBCDC0;
+  border-radius: 5px;
+}
+.main-section__contact-form {
+  height: 80vh;
+  width: 100vw;
+  color: #CBCDC0;
+  background-color: #1E2629;
+  margin-bottom: 10vh;
+}
+
+footer {
+  z-index: 1000;
+  height: 10vh;
+  width: 100vw;
+  background-color: #CBCDC0;
+  bottom: 0;
+  position: fixed;
+}
+footer p {
+  color: #1E2629;
+}

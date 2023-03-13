@@ -4,7 +4,95 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- font family -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Quicksand:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+		/>
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="styles.css" />
 		<title>RS.home.</title>
 	</head>
-	<body></body>
+	<body>
+		<header>
+			<nav>
+				<ul class="nav">
+					<li class="nav__link">
+						<a href="#landingPage" class="nav__link nav__link--home"
+							>home.</a
+						>
+					</li>
+					<li class="nav__link">
+						<a href="#skills" class="nav__link nav__link--skills"
+							>skills.</a
+						>
+					</li>
+					<li class="nav__link">
+						<a
+							href="#projects"
+							class="nav__link nav__link--projects"
+							>projects.</a
+						>
+					</li>
+					<li class="nav__link">
+						<a
+							href="#contactForm"
+							class="nav__link nav__link--contacts"
+							>contact.</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main-section">
+			<section id="landingPage" class="main-section__landing-page">
+				<h1>hello, i'm rigene.</h1>
+				<p>
+					a software developer trainee based in melbourne, australia.
+				</p>
+			</section>
+			<section id="skills" class="main-section__skills">
+				<div class="skills__icon">
+					<i class="skills__icon--html5 devicon-html5-plain"></i>
+					<i class="skills__icon--css3 devicon-css3-plain"></i>
+					<i class="skills__icon--js devicon-javascript-plain"></i>
+					<i class="skills__icon--sass devicon-sass-original"></i>
+					<i class="skills__icon--git devicon-git-plain"></i>
+					<i class="skills__icon--java devicon-java-plain"></i>
+					<i class="skills__icon--react devicon-react-original"></i>
+					<i class="skills__icon--sql devicon-mysql-plain"></i>
+					<i class="skills__icon--spring devicon-spring-plain"></i>
+				</div>
+			</section>
+			<section id="projects" class="main-section__projects">
+				<div class="main-section__projects--portfolio">
+					<img
+						src="./resources/assets/images/portfolio.png"
+						alt="small screen-cut of portfolio website"
+						width="320px"
+					/>
+					<div id="projDesc">
+						<h3>Portfolio Website</h3>
+						<p>
+							This is the portfolio website created as one of my
+							projects during the _nology training.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="contactForm" class="main-section__contact-form">
+				<form action=""></form>
+			</section>
+		</main>
+		<footer>
+			<p>copyright 2022</p>
+		</footer>
+	</body>
 </html>

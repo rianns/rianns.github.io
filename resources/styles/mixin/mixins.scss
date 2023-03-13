@@ -1,0 +1,49 @@
+@use "breakpoints";
+@import "./../modules/theme";
+
+@mixin navigation {
+  text-decoration: none;
+}
+
+@mixin main-sections {
+  height: 80vh;
+  width: 100vw;
+  color: $primary-text-color;
+  background-color: $primary-color;
+}
+
+@mixin mobile {
+  @media only screen and (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: ($sm + 1px)) and (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media only screen and (min-width: ($md + 1px)) and (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (min-width: ($lg + 1px)) and (max-width: $xl) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: ($xl + 1px)) and (max-width: $xxl) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media only screen and (min-width: ($xxl + 1px)) {
+    @content;
+  }
+}
