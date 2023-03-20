@@ -16,6 +16,10 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
 		/>
+		<script
+			src="https://kit.fontawesome.com/9d45259c94.js"
+			crossorigin="anonymous"
+		></script>
 		<!-- stylesheets -->
 		<link rel="stylesheet" href="./styles.css" />
 		<title>RS.home.</title>
@@ -43,9 +47,7 @@
 						>
 					</li>
 					<li class="nav__link">
-						<a
-							href="#contactForm"
-							class="nav__link nav__link--contacts"
+						<a href="#aboutMe" class="nav__link nav__link--contacts"
 							>contact.</a
 						>
 					</li>
@@ -143,54 +145,106 @@
 				</div>
 			</section>
 			<!-- CONTACT PAGE (possible image) -->
-			<section id="contactForm" class="contact-form">
-				<form action="https://formspree.io/f/mzbqazjk" method="POST">
-					<div id="fullName" class="full-name">
-						<input
-							id="firstName"
-							class="name"
-							type="text"
-							placeholder="First Name"
-							name="first-name"
-							required
-						/>
-						<input
-							id="lastName"
-							class="name"
-							type="text"
-							placeholder="Last Name"
-							name="last-name"
-							required
-						/>
+			<section id="contactAbout" class="contact-about">
+				<section id="formGridCont" class="form-container">
+					<div id="sendMessage" class="send-message">
+						<form
+							action="https://formspree.io/f/mzbqazjk"
+							method="POST"
+						>
+							<div id="fullName" class="full-name">
+								<label for="first-name">First name</label>
+								<input
+									id="firstName"
+									class="first-name"
+									type="text"
+									placeholder="First Name"
+									name="first-name"
+									required
+								/>
+								<label for="last-name">Last name</label>
+								<input
+									id="lastName"
+									class="last-name"
+									type="text"
+									placeholder="Last Name"
+									name="last-name"
+									required
+								/>
+							</div>
+							<div id="emailContainer" class="email-container">
+								<label for="email">E-mail</label>
+								<input
+									id="email"
+									class="email"
+									type="text"
+									placeholder="E-mail"
+									name="email"
+									required
+								/>
+							</div>
+							<div id="message" class="message">
+								<label for="message">Message</label>
+								<textarea
+									name="message"
+									id="message"
+									cols="30"
+									rows="10"
+									placeholder="Enter message here..."
+								></textarea>
+								<div id="button" class="button">
+									<button type="submit" class="btn submit">
+										Submit
+									</button>
+									<button type="reset" class="btn clear">
+										Clear
+									</button>
+								</div>
+							</div>
+						</form>
 					</div>
-					<div id="email" class="email">
-						<input
-							id="email"
-							class="email"
-							type="text"
-							placeholder="E-mail"
-							name="email"
-							required
-						/>
-					</div>
-					<div id="message" class="message">
-						<textarea
-							name="message"
-							id="message"
-							cols="30"
-							rows="10"
-						></textarea>
-						<div id="buttons" class="buttons">
-							<button type="submit">Submit</button>
-							<button type="reset">Clear</button>
+				</section>
+				<section id="aboutMe" class="about-me">
+					<img
+						src="./resources/assets/images/rigene.png"
+						alt="Rigene with a sloth plushy"
+						class="about-me__selfie"
+						width="320px"
+						height="320px"
+					/>
+					<div class="about-me-desc">
+						<h3 class="about-me-desc__header">About Rigene</h3>
+						<p class="about-me-desc__para">
+							Lorem Ipsum is simply dummy text of the printing and
+							typesetting industry. Lorem Ipsum has been the
+							industry's standard dummy text ever since the 1500s,
+							when an unknown printer took a galley of type and
+							scrambled it to make a type specimen book.
+						</p>
+						<div class="about-me-desc__icons">
+							<!-- email -->
+							<a href="mailto: rigene.salang@hotmail.com"
+								><i class="fa-sharp fa-solid fa-at"></i
+							></a>
+							<!-- github -->
+							<a href="https://github.com/rianns"
+								><i class="fa-brands fa-square-github"></i
+							></a>
+							<!-- linkdin -->
+							<a href=""><i class="fa-brands fa-linkedin"></i></a>
 						</div>
 					</div>
-				</form>
+				</section>
 			</section>
 		</main>
 		<footer>
 			<section class="copyright">
-				<p>copyright 2022</p>
+				<p>
+					Rigene Salang &copy;
+					<script type="text/javascript">
+						document.write(new Date().getFullYear());
+					</script>
+				</p>
 			</section>
 		</footer>
 	</body>

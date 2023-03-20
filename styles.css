@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 10vh;
 }
 
 html, body {
@@ -21,6 +22,7 @@ html, body {
   display: flex;
   justify-content: space-evenly;
   align-items: end;
+  border-bottom: 2px solid #1E2629;
 }
 .nav__link {
   text-align: center;
@@ -54,8 +56,8 @@ html, body {
   text-decoration: none;
   transform: translate(5px, 5px);
   transition: none;
-  color: #1E2629;
   text-shadow: none;
+  color: #1E2629;
 }
 
 main {
@@ -179,12 +181,112 @@ main .proj-grid__proj--desc:hover {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-main .contact-form {
-  border: 2px solid hotpink;
+main .contact-about {
   height: 80vh;
   width: 100vw;
   background-color: #1E2629;
+  font-family: "Quicksand", sans-serif;
+  color: #CBCDC0;
+  font-weight: 900;
   margin-bottom: 10vh;
+  display: flex;
+  width: 100%;
+}
+main .contact-about > section {
+  width: 50%;
+}
+main .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .send-message {
+  width: 500px;
+}
+main .send-message input, main .send-message textarea {
+  margin: 10px 0;
+}
+main .full-name {
+  width: 100%;
+}
+main .full-name input {
+  background-color: #BBD1D5;
+  border: 2px solid #1B4146;
+  width: 100%;
+  height: 2rem;
+}
+main .email {
+  background-color: #BBD1D5;
+  border: 2px solid #1B4146;
+  width: 100%;
+  height: 2rem;
+}
+main textarea {
+  width: 100%;
+  resize: vertical;
+}
+main .about-me {
+  background-color: #CBCDC0;
+  color: #1B4146;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .about-me img {
+  border: 2px solid #1B4146;
+  border-radius: 50%;
+  box-shadow: 10px 10px white;
+  margin: 15px 0;
+}
+main .about-me .about-me-desc {
+  width: 30vw;
+}
+main .about-me .about-me-desc__header {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px 0;
+}
+main .about-me .about-me-desc__para {
+  text-align: center;
+}
+main .about-me .about-me-desc__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .about-me .about-me-desc a {
+  margin: 20px auto;
+}
+main .about-me .about-me-desc a:link {
+  text-decoration: none;
+  color: #1B4146;
+  font-size: 3rem;
+}
+main .about-me .about-me-desc a:hover {
+  text-decoration: none;
+  color: #1B4146;
+  font-size: 3rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 5px 5px white;
+}
+main .about-me .about-me-desc a:visited {
+  text-decoration: none;
+  color: #1B4146;
+  font-size: 3rem;
+}
+main .about-me .about-me-desc a:active {
+  text-decoration: none;
+  color: #1B4146;
+  font-size: 3rem;
+  transform: translate(5px, 5px);
+  transition: none;
+  text-shadow: none;
 }
 
 footer {
@@ -194,7 +296,16 @@ footer {
   background-color: #CBCDC0;
   bottom: 0;
   position: fixed;
+  border-top: 2px solid #1E2629;
 }
 footer p {
   color: #1E2629;
+  font-family: "Quicksand", sans-serif;
+}
+
+.copyright {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
