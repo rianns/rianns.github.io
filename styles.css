@@ -8,6 +8,7 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 10vh;
   min-height: 530px;
+  overflow-x: hidden;
 }
 
 html, body {
