@@ -10,10 +10,15 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 10vh;
+  min-height: 530px;
 }
 
 html, body {
   background-color: $primary-color;
+}
+
+.nav-ico {
+  display: none;
 }
 
 .nav {
@@ -61,13 +66,25 @@ html, body {
     }
   }
 }
+@include mixins.mobile {
+  .nav-word {
+    display: none;
+  }
+  
+  .nav-ico {
+    font-size: 1.5rem;
+    line-height: 10vh;
+    display: inline-block;
+    border: 1px solid pink;
+  }
+}
 
 main {
   margin-top: 10vh;
 
   .landing-page {
     @include mixins.main-sections;
-
+    
     color: $primary-text-color;
     display: flex;
     flex-direction: column;
@@ -75,17 +92,48 @@ main {
     align-items: center;
 
     &__header {
-      font-size: 8rem;
+      font-size: 7rem;
     }
 
     &__para {
       font-family: $secondary-font-family;
-      font-size: 1.7rem;
+      font-size: 1.2rem;
+    }
+
+    @include mixins.mobile {
+      height: 80vh;
+
+      &__header {
+        font-size: 5.5rem;
+      }
+
+      &__para {
+        font-size: 1rem;
+      }
+    }
+
+    @include mixins.mobile {
+      padding: 0 30px;
+    }
+
+    @include mixins.tablet {
+      &__header {
+        font-size: 5rem;
+      }
+    }
+
+    @include mixins.tablet-landscape {
+      &__header {
+        text-align: center;
+        font-size: 6rem;
+      }
     }
   }
 
+  
   .skills {
     @include mixins.main-sections;
+    
     color: $primary-text-color;
     display: flex;
     justify-content: center;
@@ -117,6 +165,30 @@ main {
       box-shadow: 5px 5px white;
       @include mixins.fade-out-fx;
     }
+
+    @include mixins.mobile {
+      height: 80vh;
+
+      div {
+        height: 280px;
+        width: 280px;
+      }
+      i {
+        font-size: 4rem;
+      }
+    }
+
+    @include mixins.tablet-landscape {
+      height: 80vh;
+
+      div {
+        height: 320px;
+        width: 320px;
+      }
+      i {
+        font-size: 4rem;
+      }
+    }
   }
 
   .projects {
@@ -124,6 +196,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include mixins.mobile {
+      height: auto;
+      padding: 20px 0;
+    }
   }
 
   .proj-grid {
@@ -133,7 +210,6 @@ main {
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
-    
     
     &__proj {
       background-color: $secondary-color;
@@ -187,6 +263,31 @@ main {
         cursor: pointer;
       }
     }
+
+    @include mixins.mobile {
+      &__proj {
+        width: 100%;
+        height: 30vh;
+        &--desc {
+          h3 {
+            font-size: 1rem;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    // @include mixins.laptop {
+    //   height: 80vh;
+    // }
+    // @include mixins.desktop {
+    //   height: 80vh;
+    // }
+    // @include mixins.desktop-large {
+    //   height: 80vh;
+    // }
   }
 
   .contact-about {
@@ -196,10 +297,28 @@ main {
     font-weight: 900;
     margin-bottom: 10vh;
     display: flex;
+
+    @include mixins.mobile {
+      flex-flow: row wrap;
+    }
+
+    @include mixins.tablet {
+      flex-flow: row wrap;
+    }
   }
 
   .contact-about > section {
     width: 50%;
+    
+    @include mixins.mobile {
+      height: 80vh;
+      width: 100%;
+    }
+
+    @include mixins.tablet {
+      height: 80vh;
+      width: 100%;
+    }
   }
 
   .form-container {
@@ -213,6 +332,18 @@ main {
 
     input, textarea {
       margin: 10px 0;
+    }
+
+    @include mixins.mobile {
+      width: 300px;
+    }
+
+    @include mixins.tablet-landscape {
+      width: 350px;
+    }
+
+    @include mixins.laptop {
+      width: 400px;
     }
   }
 
@@ -249,8 +380,9 @@ main {
       border: 2px solid $tertiary-color;
       border-radius: 50%;
       box-shadow: 10px 10px white;
-      width: 240px;
-      height: 240px;
+      width: 180px;
+      height: 180px;
+      margin-bottom: 20px;
     }
 
     .about-me-desc {
@@ -265,7 +397,7 @@ main {
 
       &__para {
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
       }
 
       &__icons {
@@ -296,11 +428,54 @@ main {
         @include mixins.about-links;
         @include mixins.nav-active;
       }
+
+      @include mixins.mobile {
+        width: 80%;
+        font-size: 1rem;
+
+        &__header {
+          font-size: 1.2rem;
+          margin: 0;
+        }
+
+        &__para {
+          font-size: 0.8rem;
+          margin: 10px 0 0 0;
+        }
+      }
+
+      @include mixins.tablet {
+        width: 70%;
+        font-size: 1.2rem;
+      }
+    }
+
+    @include mixins.mobile {
+      height: 100vh;
+      padding-bottom: 10%; 
+
+      img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+      }
+    }
+
+    @include mixins.tablet {
+      height: 100vh;
+      padding-bottom: 10%; 
+
+      img {
+        margin-bottom: 50px;
+      }
     }
   }
 
-  
-
+  @include mixins.mobile {
+    section {
+      height: 100%;
+    }
+  }
 }
 
 footer {
