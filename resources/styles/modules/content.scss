@@ -64,7 +64,7 @@ html, body {
 
 main {
   margin-top: 10vh;
-  
+
   .landing-page {
     @include mixins.main-sections;
 
@@ -196,7 +196,6 @@ main {
     font-weight: 900;
     margin-bottom: 10vh;
     display: flex;
-    width: 100%;
   }
 
   .contact-about > section {

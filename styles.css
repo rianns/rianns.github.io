@@ -190,7 +190,6 @@ main .contact-about {
   font-weight: 900;
   margin-bottom: 10vh;
   display: flex;
-  width: 100%;
 }
 main .contact-about > section {
   width: 50%;
