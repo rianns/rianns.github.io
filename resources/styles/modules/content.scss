@@ -10,10 +10,15 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 10vh;
+  min-height: 530px;
 }
 
 html, body {
   background-color: $primary-color;
+}
+
+.nav-ico {
+  display: none;
 }
 
 .nav {
@@ -61,6 +66,18 @@ html, body {
     }
   }
 }
+@include mixins.mobile {
+  .nav-word {
+    display: none;
+  }
+  
+  .nav-ico {
+    font-size: 1.5rem;
+    line-height: 10vh;
+    display: inline-block;
+    border: 1px solid pink;
+  }
+}
 
 main {
   margin-top: 10vh;
@@ -75,15 +92,38 @@ main {
     align-items: center;
 
     &__header {
-      font-size: 8rem;
+      font-size: 7rem;
     }
 
     &__para {
       font-family: $secondary-font-family;
-      font-size: 1.7rem;
+      font-size: 1.2rem;
+    }
+
+    @include mixins.mobile {
+      &__header {
+        font-size: 3rem;
+      }
+
+      &__para {
+        font-size: 1rem;
+      }
+    }
+
+    @include mixins.tablet {
+      &__header {
+        font-size: 5rem;
+      }
+    }
+
+    @include mixins.tablet-landscape {
+      &__header {
+        font-size: 6rem;
+      }
     }
   }
 
+  
   .skills {
     @include mixins.main-sections;
     color: $primary-text-color;
@@ -116,6 +156,16 @@ main {
     i:hover {
       box-shadow: 5px 5px white;
       @include mixins.fade-out-fx;
+    }
+
+    @include mixins.mobile {
+      div {
+        height: 280px;
+        width: 280px;
+      }
+      i {
+        font-size: 4rem;
+      }
     }
   }
 
@@ -187,6 +237,13 @@ main {
         cursor: pointer;
       }
     }
+
+    @include mixins.mobile {
+      &__proj {
+        width: 100%;
+        height: 30vh;
+      }
+    }
   }
 
   .contact-about {
@@ -196,10 +253,28 @@ main {
     font-weight: 900;
     margin-bottom: 10vh;
     display: flex;
+
+    @include mixins.mobile {
+      flex-flow: row wrap;
+    }
+
+    @include mixins.tablet {
+      flex-flow: row wrap;
+    }
   }
 
   .contact-about > section {
     width: 50%;
+    
+    @include mixins.mobile {
+      height: 80vh;
+      width: 100%;
+    }
+
+    @include mixins.tablet {
+      height: 80vh;
+      width: 100%;
+    }
   }
 
   .form-container {
@@ -213,6 +288,18 @@ main {
 
     input, textarea {
       margin: 10px 0;
+    }
+
+    @include mixins.mobile {
+      width: 300px;
+    }
+
+    @include mixins.tablet-landscape {
+      width: 350px;
+    }
+
+    @include mixins.laptop {
+      width: 400px;
     }
   }
 
@@ -296,11 +383,50 @@ main {
         @include mixins.about-links;
         @include mixins.nav-active;
       }
+
+      @include mixins.mobile {
+        width: 80%;
+        font-size: 1.2rem;
+      }
+
+      @include mixins.tablet {
+        width: 70%;
+        font-size: 1.2rem;
+      }
+    
+    }
+
+    @include mixins.mobile {
+      height: 100vh;
+      padding-bottom: 10%; 
+
+      img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 50px;
+      }
+    }
+
+    @include mixins.mobile {
+      height: 100vh;
+      padding-bottom: 10vh;
+    }
+
+    @include mixins.tablet {
+      height: 100vh;
+      padding-bottom: 10%; 
+
+      img {
+        margin-bottom: 50px;
+      }
     }
   }
 
-  
-
+  @include mixins.mobile {
+    section {
+      height: 100%;
+    }
+  }
 }
 
 footer {
