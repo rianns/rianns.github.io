@@ -73,7 +73,26 @@ html, body {
     font-size: 1.5rem;
     line-height: 10vh;
     display: inline-block;
-    border: 1px solid pink;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .nav-word {
+    display: none;
+  }
+  .nav-ico {
+    font-size: 1.5rem;
+    line-height: 10vh;
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .nav-word {
+    display: none;
+  }
+  .nav-ico {
+    font-size: 1.5rem;
+    line-height: 10vh;
+    display: inline-block;
   }
 }
 main {
@@ -166,6 +185,18 @@ main .skills i:hover {
   main .skills div {
     height: 280px;
     width: 280px;
+  }
+  main .skills i {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  main .skills {
+    height: 80vh;
+  }
+  main .skills div {
+    height: 320px;
+    width: 320px;
   }
   main .skills i {
     font-size: 4rem;
@@ -360,7 +391,7 @@ main .about-me img {
   box-shadow: 10px 10px white;
   width: 180px;
   height: 180px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 main .about-me .about-me-desc {
   width: 30vw;
@@ -426,9 +457,15 @@ main .about-me .about-me-desc a:active {
     margin: 10px 0 0 0;
   }
 }
+@media only screen and (max-width: 480px) {
+  main .about-me .about-me-desc {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+}
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   main .about-me .about-me-desc {
-    width: 70%;
+    width: 80%;
     font-size: 1.2rem;
   }
 }
@@ -440,7 +477,7 @@ main .about-me .about-me-desc a:active {
   main .about-me img {
     width: 120px;
     height: 120px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -449,7 +486,7 @@ main .about-me .about-me-desc a:active {
     padding-bottom: 10%;
   }
   main .about-me img {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 480px) {
