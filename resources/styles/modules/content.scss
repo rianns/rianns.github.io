@@ -249,7 +249,6 @@ main {
       border: 2px solid $tertiary-color;
       border-radius: 50%;
       box-shadow: 10px 10px white;
-      margin: 15px 0;
     }
 
     .about-me-desc {
@@ -264,6 +263,7 @@ main {
 
       &__para {
         text-align: center;
+        margin-bottom: 10px;
       }
 
       &__icons {
@@ -273,7 +273,7 @@ main {
       }
 
       a {
-        margin: 20px auto;
+        margin: 10px auto;
       }
 
       a:link {
