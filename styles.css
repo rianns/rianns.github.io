@@ -229,7 +229,7 @@ main {
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .proj-grid__proj {
-    width: 100%;
+    width: 70%;
     height: 30vh;
   }
   .proj-grid__proj--desc h3 {
@@ -241,7 +241,7 @@ main {
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .proj-grid__proj {
-    width: 100%;
+    width: 60%;
     height: 30vh;
   }
   .proj-grid__proj--desc h3 {
