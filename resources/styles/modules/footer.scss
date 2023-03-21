@@ -1,0 +1,24 @@
+@use "./../mixin/mixins";
+@import "theme";
+
+footer {
+  z-index: 1000;
+  height: 10vh;
+  width: 100vw;
+  background-color: $secondary-color;
+  bottom: 0;
+  position: fixed;
+  border-top: 2px solid $primary-color;
+
+  p {
+    color: $primary-color;
+    font-family: $secondary-font-family;
+  }
+}
+
+.copyright {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
