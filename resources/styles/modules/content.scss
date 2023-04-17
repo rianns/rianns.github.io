@@ -2,492 +2,506 @@
 @import "theme";
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 10vh;
-  min-height: 530px;
-  overflow-x: hidden;
+	scroll-behavior: smooth;
+	scroll-padding-top: 10vh;
+	min-height: 530px;
+	overflow-x: hidden;
 }
 
-html, body {
-  background-color: $primary-color;
+html,
+body {
+	background-color: $primary-color;
 }
 
 main {
-  margin-top: 10vh;
+	margin-top: 10vh;
 
-  @include mixins.mobile {
-    section {
-      height: 100%;
-    }
-  }
+	@include mixins.mobile {
+		section {
+			height: 100%;
+		}
+	}
 }
 
 .landing-page {
-  @include mixins.main-sections;
-  
-  color: $primary-text-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	@include mixins.main-sections;
 
-  &__header {
-    font-size: 7rem;
-  }
+	color: $primary-text-color;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-  &__para {
-    font-family: $secondary-font-family;
-    font-size: 1.2rem;
-  }
+	&__header {
+		font-size: 7rem;
+	}
 
-  @include mixins.mobile {
-    height: 80vh;
+	&__para {
+		font-family: $secondary-font-family;
+		font-size: 1.2rem;
+	}
 
-    &__header {
-      font-size: 5.5rem;
-    }
+	@include mixins.mobile {
+		height: 80vh;
 
-    &__para {
-      font-size: 1rem;
-    }
-  }
+		&__header {
+			font-size: 5.5rem;
+		}
 
-  @include mixins.mobile {
-    padding: 0 30px;
-  }
+		&__para {
+			font-size: 1rem;
+		}
+	}
 
-  @include mixins.tablet {
-    &__header {
-      font-size: 5rem;
-    }
-  }
+	@include mixins.mobile {
+		padding: 0 30px;
+	}
 
-  @include mixins.tablet-landscape {
-    &__header {
-      text-align: center;
-      font-size: 6rem;
-    }
-  }
+	@include mixins.tablet {
+		&__header {
+			font-size: 5rem;
+		}
+	}
+
+	@include mixins.tablet-landscape {
+		&__header {
+			text-align: center;
+			font-size: 6rem;
+		}
+	}
 }
 
 .skills {
-  @include mixins.main-sections;
-  
-  color: $primary-text-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  div {
-    height: 500px;
-    width: 500px;
-  }
+	@include mixins.main-sections;
 
-  &__icon {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    gap: 10px;
-  }
+	color: $primary-text-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-  i {
-    border: 2px solid $secondary-color;
-    font-size: 6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+	div {
+		height: 500px;
+		width: 500px;
+	}
 
-  i:hover {
-    box-shadow: 5px 5px white;
-    @include mixins.fade-out-fx;
-  }
+	&__icon {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-auto-flow: column;
+		grid-auto-columns: 1fr;
+		gap: 10px;
+	}
 
-  @include mixins.mobile {
-    height: 80vh;
+	i {
+		border: 2px solid $secondary-color;
+		font-size: 6rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-    div {
-      height: 280px;
-      width: 280px;
-    }
-    i {
-      font-size: 4rem;
-    }
-  }
+	i:hover {
+		box-shadow: 5px 5px white;
+		@include mixins.fade-out-fx;
+	}
 
-  @include mixins.tablet {
-    height: 80vh;
+	@include mixins.mobile {
+		height: 80vh;
 
-    div {
-      height: 300px;
-      width: 300px;
-    }
-    i {
-      font-size: 4rem;
-    }
-  }
+		div {
+			height: 280px;
+			width: 280px;
+		}
+		i {
+			font-size: 4rem;
+		}
+	}
 
-  @include mixins.tablet-landscape {
-    height: 80vh;
+	@include mixins.tablet {
+		height: 80vh;
 
-    div {
-      height: 320px;
-      width: 320px;
-    }
-    i {
-      font-size: 4rem;
-    }
-  }
+		div {
+			height: 300px;
+			width: 300px;
+		}
+		i {
+			font-size: 4rem;
+		}
+	}
+
+	@include mixins.tablet-landscape {
+		height: 80vh;
+
+		div {
+			height: 320px;
+			width: 320px;
+		}
+		i {
+			font-size: 4rem;
+		}
+	}
 }
 
 .projects {
-  padding: 2.5rem 0;
-  width: 100vw;
-  background-color: $primary-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	padding: 2.5rem 0;
+	width: 100vw;
+	background-color: $primary-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-  @include mixins.mobile {
-    height: auto;
-    padding: 20px 0;
-  }
+	@include mixins.mobile {
+		height: auto;
+		padding: 20px 0;
+	}
 }
 
 .proj-grid {
-  height: 80%;
-  width: 80vw;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-  
-  &__proj {
-    background-color: $secondary-color;
-    width: 30vw;
-    height: 30vh;
-    position: relative;
+	height: 80%;
+	width: 80vw;
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: center;
 
-    .proj-content {
-      border: 2px solid $secondary-color;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+	&__proj {
+		background-color: $secondary-color;
+		width: 30vw;
+		height: 30vh;
+		position: relative;
 
-    img {
-      object-fit: cover;
-    }
+		.proj-content {
+			border: 2px solid $secondary-color;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
 
-    &--desc {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 0 30px;
-      z-index: 100;
-      color: $tertiary-color;
-      background-color: $desc-bg;
-      opacity: 0;
+		img {
+			object-fit: cover;
+		}
 
-      h3, p {
-        width: 100%;
-      }
+		&--desc {
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+			align-items: center;
+			padding: 0 30px;
+			z-index: 100;
+			color: $tertiary-color;
+			background-color: $desc-bg;
+			opacity: 0;
 
-      h3 {
-        font-size: 2rem;
-        font-family: $main-font-family;
-      }
+			h3,
+			p {
+				width: 100%;
+			}
 
-      p {
-        font-family: $secondary-font-family;
-        font-weight: bold;
-        padding: 5px 0;
-      }
-    }
+			h3 {
+				font-size: 2rem;
+				font-family: $main-font-family;
+			}
 
-    &--desc:hover {
-      opacity: 1.0;
-      box-shadow: 5px 5px white;
-      @include mixins.fade-out-fx;
-      cursor: pointer;
-    }
-  }
+			p {
+				font-family: $secondary-font-family;
+				font-weight: bold;
+				padding: 5px 0;
+			}
+		}
 
-  @include mixins.mobile {
-    &__proj {
-      width: 100%;
-      height: 30vh;
-      &--desc {
-        h3 {
-          font-size: 1rem;
-        }
-        p {
-          font-size: 0.9rem;
-        }
-      }
-    }
-  }
+		&--desc:hover {
+			opacity: 1;
+			box-shadow: 5px 5px white;
+			@include mixins.fade-out-fx;
+			cursor: pointer;
+		}
+	}
 
-  @include mixins.tablet {
-    &__proj {
-      width: 70%;
-      height: 30vh;
-      &--desc {
-        h3 {
-          font-size: 1.2rem;
-        }
-        p {
-          font-size: 0.9rem;
-        }
-      }
-    }
-  }
-  @include mixins.tablet-landscape {
-    &__proj {
-      width: 60%;
-      height: 30vh;
-      &--desc {
-        h3 {
-          font-size: 1.8rem;
-        }
-        p {
-          font-size: 1.2rem;
-        }
-      }
-    }
-  }
+	@include mixins.mobile {
+		&__proj {
+			width: 100%;
+			height: 30vh;
+			&--desc {
+				h3 {
+					font-size: 1rem;
+				}
+				p {
+					font-size: 0.9rem;
+				}
+			}
+		}
+	}
+
+	@include mixins.tablet {
+		&__proj {
+			width: 70%;
+			height: 30vh;
+			&--desc {
+				h3 {
+					font-size: 1.2rem;
+				}
+				p {
+					font-size: 0.9rem;
+				}
+			}
+		}
+	}
+	@include mixins.tablet-landscape {
+		&__proj {
+			width: 60%;
+			height: 30vh;
+			&--desc {
+				h3 {
+					font-size: 1.8rem;
+				}
+				p {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
 }
 
 .project-links {
-  a:link {
-    @include mixins.project-links;
-  }
-  a:hover {
-    color: $tertiary-color;
-    text-decoration: underline;
-  }
-  a:visited {
-    @include mixins.project-links;
-  }
-  a:active {
-    @include mixins.project-links;
-  }
+	background: linear-gradient(to right, $primary-color, rgba(white, 0));
+	color: $primary-text-color;
+	border-radius: 5px 0 0 5px;
+
+	a {
+		padding-left: 10px;
+	}
+
+	a:link {
+		@include mixins.project-links;
+		color: $primary-text-color;
+	}
+	a:hover {
+		color: $tertiary-color;
+		text-decoration: underline;
+	}
+	a:visited {
+		@include mixins.project-links;
+		color: $primary-text-color;
+	}
+	a:active {
+		@include mixins.project-links;
+		color: $primary-text-color;
+	}
 }
 
 .contact-about {
-  @include mixins.main-sections;
-  font-family: $secondary-font-family;
-  color: $primary-text-color;
-  font-weight: 900;
-  margin-bottom: 10vh;
-  display: flex;
+	@include mixins.main-sections;
+	font-family: $secondary-font-family;
+	color: $primary-text-color;
+	font-weight: 900;
+	margin-bottom: 10vh;
+	display: flex;
 
-  @include mixins.mobile {
-    flex-flow: row wrap;
-  }
+	@include mixins.mobile {
+		flex-flow: row wrap;
+	}
 
-  @include mixins.tablet {
-    flex-flow: row wrap;
-  }
+	@include mixins.tablet {
+		flex-flow: row wrap;
+	}
 }
 
 .contact-about > section {
-  width: 50%;
-  
-  @include mixins.mobile {
-    height: 80vh;
-    width: 100%;
-  }
+	width: 50%;
 
-  @include mixins.tablet {
-    height: 80vh;
-    width: 100%;
-  }
+	@include mixins.mobile {
+		height: 80vh;
+		width: 100%;
+	}
+
+	@include mixins.tablet {
+		height: 80vh;
+		width: 100%;
+	}
 }
 
 .form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .send-message {
-  width: 500px;
+	width: 500px;
 
-  input, textarea {
-    margin: 10px 0;
-  }
+	input,
+	textarea {
+		margin: 10px 0;
+	}
 
-  @include mixins.mobile {
-    width: 300px;
-  }
+	@include mixins.mobile {
+		width: 300px;
+	}
 
-  @include mixins.tablet-landscape {
-    width: 350px;
-  }
+	@include mixins.tablet-landscape {
+		width: 350px;
+	}
 
-  @include mixins.laptop {
-    width: 400px;
-  }
+	@include mixins.laptop {
+		width: 400px;
+	}
 }
 
 .full-name {
-  width: 100%;
-  
-  input {
-    @include mixins.form-box;
-    width: 100%;
-    height: 2rem;
-  }
+	width: 100%;
+
+	input {
+		@include mixins.form-box;
+		width: 100%;
+		height: 2rem;
+	}
 }
 
 .email {
-  @include mixins.form-box;
-  width: 100%;
-  height: 2rem;
+	@include mixins.form-box;
+	width: 100%;
+	height: 2rem;
 }
 
 textarea {
-  width: 100%;
-  resize: vertical;
+	width: 100%;
+	resize: vertical;
 }
 
 .button {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
 
-  &__btn {
-    border: 2px solid $secondary-color;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $tertiary-color;
-    color: $primary-text-color;
-  }
+	&__btn {
+		border: 2px solid $secondary-color;
+		height: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $tertiary-color;
+		color: $primary-text-color;
+	}
 
-  button:hover {
-    box-shadow: 5px 5px white;
-  }
+	button:hover {
+		box-shadow: 5px 5px white;
+	}
 
-  button:active {
-    @include mixins.nav-active;
-    box-shadow: none;
-  }
+	button:active {
+		@include mixins.nav-active;
+		box-shadow: none;
+	}
 }
 
 .about-me {
-  background-color: $secondary-color;
-  color: $tertiary-color;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+	background-color: $secondary-color;
+	color: $tertiary-color;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
 
-  img {
-    border: 2px solid $tertiary-color;
-    border-radius: 50%;
-    box-shadow: 10px 10px white;
-    width: 180px;
-    height: 180px;
-    margin-bottom: 10px;
-  }
+	img {
+		border: 2px solid $tertiary-color;
+		border-radius: 50%;
+		box-shadow: 10px 10px white;
+		width: 180px;
+		height: 180px;
+		margin-bottom: 10px;
+	}
 
-  @include mixins.mobile {
-    height: 100vh;
-    padding-bottom: 10%; 
+	@include mixins.mobile {
+		height: 100vh;
+		padding-bottom: 10%;
 
-    img {
-      width: 120px;
-      height: 120px;
-      margin-bottom: 40px;
-    }
-  }
+		img {
+			width: 120px;
+			height: 120px;
+			margin-bottom: 40px;
+		}
+	}
 
-  @include mixins.tablet {
-    height: 100vh;
-    padding-bottom: 10%; 
+	@include mixins.tablet {
+		height: 100vh;
+		padding-bottom: 10%;
 
-    img {
-      margin-bottom: 20px;
-    }
-  }
+		img {
+			margin-bottom: 20px;
+		}
+	}
 }
 
 .about-me-desc {
-  width: 30vw;
+	width: 30vw;
 
-  &__header {
-    font-family: $main-font-family;
-    font-size: 2rem;
-    text-align: center;
-    margin: 10px 0;
-  }
+	&__header {
+		font-family: $main-font-family;
+		font-size: 2rem;
+		text-align: center;
+		margin: 10px 0;
+	}
 
-  &__para {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+	&__para {
+		text-align: center;
+		margin-bottom: 20px;
+	}
 
-  &__icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+	&__icons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-  a {
-    margin: 10px auto;
-  }
+	a {
+		margin: 10px auto;
+	}
 
-  a:link {
-    @include mixins.about-links;
-  }
+	a:link {
+		@include mixins.about-links;
+	}
 
-  a:hover {
-    @include mixins.about-links;
-    @include mixins.fade-out-fx;
-    text-shadow: 5px 5px white;
-  }
+	a:hover {
+		@include mixins.about-links;
+		@include mixins.fade-out-fx;
+		text-shadow: 5px 5px white;
+	}
 
-  a:visited {
-    @include mixins.about-links;
-  }
+	a:visited {
+		@include mixins.about-links;
+	}
 
-  a:active {
-    @include mixins.about-links;
-    @include mixins.nav-active;
-  }
+	a:active {
+		@include mixins.about-links;
+		@include mixins.nav-active;
+	}
 
-  @include mixins.mobile {
-    width: 90%;
-    font-size: 1.2rem;
+	@include mixins.mobile {
+		width: 90%;
+		font-size: 1.2rem;
 
-    &__header {
-      font-size: 1.2rem;
-      margin: 0;
-    }
+		&__header {
+			font-size: 1.2rem;
+			margin: 0;
+		}
 
-    &__para {
-      font-size: 0.8rem;
-      margin: 10px 0 0 0;
-    }
-  }
+		&__para {
+			font-size: 0.8rem;
+			margin: 10px 0 0 0;
+		}
+	}
 
-  @include mixins.tablet {
-    width: 80%;
-    font-size: 1.2rem;
-  }
+	@include mixins.tablet {
+		width: 80%;
+		font-size: 1.2rem;
+	}
 }

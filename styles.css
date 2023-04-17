@@ -11,7 +11,8 @@ html {
   overflow-x: hidden;
 }
 
-html, body {
+html,
+body {
   background-color: #1E2629;
 }
 
@@ -193,7 +194,8 @@ main {
   background-color: rgba(203, 205, 192, 0.9);
   opacity: 0;
 }
-.proj-grid__proj--desc h3, .proj-grid__proj--desc p {
+.proj-grid__proj--desc h3,
+.proj-grid__proj--desc p {
   width: 100%;
 }
 .proj-grid__proj--desc h3 {
@@ -252,9 +254,18 @@ main {
   }
 }
 
+.project-links {
+  background: linear-gradient(to right, #1E2629, rgba(255, 255, 255, 0));
+  color: #CBCDC0;
+  border-radius: 5px 0 0 5px;
+}
+.project-links a {
+  padding-left: 10px;
+}
 .project-links a:link {
   text-decoration: none;
   color: #1B4146;
+  color: #CBCDC0;
 }
 .project-links a:hover {
   color: #1B4146;
@@ -263,10 +274,12 @@ main {
 .project-links a:visited {
   text-decoration: none;
   color: #1B4146;
+  color: #CBCDC0;
 }
 .project-links a:active {
   text-decoration: none;
   color: #1B4146;
+  color: #CBCDC0;
 }
 
 .contact-about {
@@ -315,7 +328,8 @@ main {
 .send-message {
   width: 500px;
 }
-.send-message input, .send-message textarea {
+.send-message input,
+.send-message textarea {
   margin: 10px 0;
 }
 @media only screen and (max-width: 480px) {
