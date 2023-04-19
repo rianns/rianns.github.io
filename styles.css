@@ -13,7 +13,7 @@ html {
 
 html,
 body {
-  background-color: #1E2629;
+  background-color: #1e2629;
 }
 
 main {
@@ -28,8 +28,8 @@ main {
 .landing-page {
   height: 80vh;
   width: 100vw;
-  background-color: #1E2629;
-  color: #CBCDC0;
+  background-color: #1e2629;
+  color: #cbcdc0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,8 +73,8 @@ main {
 .skills {
   height: 80vh;
   width: 100vw;
-  background-color: #1E2629;
-  color: #CBCDC0;
+  background-color: #1e2629;
+  color: #cbcdc0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +92,7 @@ main {
   gap: 10px;
 }
 .skills i {
-  border: 2px solid #CBCDC0;
+  border: 2px solid #cbcdc0;
   font-size: 6rem;
   display: flex;
   justify-content: center;
@@ -146,7 +146,7 @@ main {
 .projects {
   padding: 2.5rem 0;
   width: 100vw;
-  background-color: #1E2629;
+  background-color: #1e2629;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,13 +167,13 @@ main {
   justify-content: center;
 }
 .proj-grid__proj {
-  background-color: #CBCDC0;
+  background-color: #cbcdc0;
   width: 30vw;
   height: 30vh;
   position: relative;
 }
 .proj-grid__proj .proj-content {
-  border: 2px solid #CBCDC0;
+  border: 2px solid #cbcdc0;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -190,7 +190,7 @@ main {
   align-items: center;
   padding: 0 30px;
   z-index: 100;
-  color: #1B4146;
+  color: #1b4146;
   background-color: rgba(203, 205, 192, 0.9);
   opacity: 0;
 }
@@ -205,7 +205,7 @@ main {
 .proj-grid__proj--desc p {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
-  padding: 5px 0;
+  padding: 15px 0;
 }
 .proj-grid__proj--desc:hover {
   opacity: 1;
@@ -255,39 +255,43 @@ main {
 }
 
 .project-links {
-  background: linear-gradient(to right, #1E2629, rgba(255, 255, 255, 0));
-  color: #CBCDC0;
+  color: #cbcdc0;
   border-radius: 5px 0 0 5px;
 }
 .project-links a {
-  padding-left: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #bd6054;
 }
 .project-links a:link {
   text-decoration: none;
-  color: #1B4146;
-  color: #CBCDC0;
+  color: #1b4146;
+  color: #cbcdc0;
 }
 .project-links a:hover {
-  color: #1B4146;
-  text-decoration: underline;
+  color: #cbcdc0;
+  box-shadow: 5px 5px white;
 }
 .project-links a:visited {
   text-decoration: none;
-  color: #1B4146;
-  color: #CBCDC0;
+  color: #1b4146;
+  color: #cbcdc0;
 }
 .project-links a:active {
   text-decoration: none;
-  color: #1B4146;
-  color: #CBCDC0;
+  color: #1b4146;
+  color: #cbcdc0;
+  box-shadow: none;
+  transform: translate(5px, 5px);
 }
 
 .contact-about {
   height: 80vh;
   width: 100vw;
-  background-color: #1E2629;
+  background-color: #1e2629;
   font-family: "Quicksand", sans-serif;
-  color: #CBCDC0;
+  color: #cbcdc0;
   font-weight: 900;
   margin-bottom: 10vh;
   display: flex;
@@ -352,15 +356,15 @@ main {
   width: 100%;
 }
 .full-name input {
-  background-color: #BBD1D5;
-  border: 2px solid #1B4146;
+  background-color: #bbd1d5;
+  border: 2px solid #1b4146;
   width: 100%;
   height: 2rem;
 }
 
 .email {
-  background-color: #BBD1D5;
-  border: 2px solid #1B4146;
+  background-color: #bbd1d5;
+  border: 2px solid #1b4146;
   width: 100%;
   height: 2rem;
 }
@@ -377,13 +381,13 @@ textarea {
   gap: 10px;
 }
 .button__btn {
-  border: 2px solid #CBCDC0;
+  border: 2px solid #cbcdc0;
   height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1B4146;
-  color: #CBCDC0;
+  background-color: #1b4146;
+  color: #cbcdc0;
 }
 .button button:hover {
   box-shadow: 5px 5px white;
@@ -396,15 +400,15 @@ textarea {
 }
 
 .about-me {
-  background-color: #CBCDC0;
-  color: #1B4146;
+  background-color: #cbcdc0;
+  color: #1b4146;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
 .about-me img {
-  border: 2px solid #1B4146;
+  border: 2px solid #1b4146;
   border-radius: 50%;
   box-shadow: 10px 10px white;
   width: 180px;
@@ -455,12 +459,12 @@ textarea {
 }
 .about-me-desc a:link {
   text-decoration: none;
-  color: #1B4146;
+  color: #1b4146;
   font-size: 3rem;
 }
 .about-me-desc a:hover {
   text-decoration: none;
-  color: #1B4146;
+  color: #1b4146;
   font-size: 3rem;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -471,12 +475,12 @@ textarea {
 }
 .about-me-desc a:visited {
   text-decoration: none;
-  color: #1B4146;
+  color: #1b4146;
   font-size: 3rem;
 }
 .about-me-desc a:active {
   text-decoration: none;
-  color: #1B4146;
+  color: #1b4146;
   font-size: 3rem;
   transform: translate(5px, 5px);
   transition: none;
@@ -509,14 +513,14 @@ textarea {
 
 .nav {
   z-index: 1000;
-  background-color: #CBCDC0;
+  background-color: #cbcdc0;
   position: fixed;
   width: 100vw;
   top: 0;
   display: flex;
   justify-content: space-evenly;
   align-items: end;
-  border-bottom: 2px solid #1E2629;
+  border-bottom: 2px solid #1e2629;
 }
 .nav__link {
   text-align: center;
@@ -529,7 +533,7 @@ textarea {
 }
 .nav__link a:link {
   text-decoration: none;
-  color: #1E2629;
+  color: #1e2629;
 }
 .nav__link a:hover {
   text-decoration: none;
@@ -543,14 +547,14 @@ textarea {
 }
 .nav__link a:visited {
   text-decoration: none;
-  color: #1E2629;
+  color: #1e2629;
 }
 .nav__link a:active {
   text-decoration: none;
   transform: translate(5px, 5px);
   transition: none;
   text-shadow: none;
-  color: #1E2629;
+  color: #1e2629;
 }
 
 @media only screen and (max-width: 480px) {
@@ -587,13 +591,13 @@ footer {
   z-index: 1000;
   height: 10vh;
   width: 100vw;
-  background-color: #CBCDC0;
+  background-color: #cbcdc0;
   bottom: 0;
   position: fixed;
-  border-top: 2px solid #1E2629;
+  border-top: 2px solid #1e2629;
 }
 footer p {
-  color: #1E2629;
+  color: #1e2629;
   font-family: "Quicksand", sans-serif;
 }
 

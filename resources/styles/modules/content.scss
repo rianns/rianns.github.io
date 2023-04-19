@@ -214,7 +214,7 @@ main {
 			p {
 				font-family: $secondary-font-family;
 				font-weight: bold;
-				padding: 5px 0;
+				padding: 15px 0;
 			}
 		}
 
@@ -272,12 +272,14 @@ main {
 }
 
 .project-links {
-	background: linear-gradient(to right, $primary-color, rgba(white, 0));
 	color: $primary-text-color;
 	border-radius: 5px 0 0 5px;
 
 	a {
-		padding-left: 10px;
+		display: inline-block;
+		border-radius: 5px;
+		padding: 10px;
+		background-color: $accent-color;
 	}
 
 	a:link {
@@ -285,8 +287,8 @@ main {
 		color: $primary-text-color;
 	}
 	a:hover {
-		color: $tertiary-color;
-		text-decoration: underline;
+		color: $primary-text-color;
+		box-shadow: 5px 5px white;
 	}
 	a:visited {
 		@include mixins.project-links;
@@ -295,6 +297,8 @@ main {
 	a:active {
 		@include mixins.project-links;
 		color: $primary-text-color;
+		box-shadow: none;
+		transform: translate(5px, 5px);
 	}
 }
 
