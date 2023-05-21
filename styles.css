@@ -45,17 +45,13 @@ main {
 @media only screen and (max-width: 480px) {
   .landing-page {
     height: 80vh;
+    padding: 0 30px;
   }
   .landing-page__header {
     font-size: 5.5rem;
   }
   .landing-page__para {
     font-size: 1rem;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .landing-page {
-    padding: 0 30px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -83,14 +79,6 @@ main {
   height: 500px;
   width: 500px;
 }
-.skills__icon {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-  gap: 10px;
-}
 .skills i {
   border: 2px solid #cbcdc0;
   font-size: 6rem;
@@ -105,6 +93,14 @@ main {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+.skills__icon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 10px;
 }
 @media only screen and (max-width: 480px) {
   .skills {
@@ -193,6 +189,7 @@ main {
   color: #1b4146;
   background-color: rgba(203, 205, 192, 0.9);
   opacity: 0;
+  width: 100%;
 }
 .proj-grid__proj--desc h3,
 .proj-grid__proj--desc p {
@@ -253,10 +250,25 @@ main {
     font-size: 1.2rem;
   }
 }
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .proj-grid_proj_desc h3 {
+    font-size: 1.6rem;
+  }
+  .proj-grid_proj_desc p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .proj-grid_proj_desc h3 {
+    font-size: 1.8rem;
+  }
+  .proj-grid_proj_desc p {
+    font-size: 1.2rem;
+  }
+}
 
 .project-links {
   color: #cbcdc0;
-  border-radius: 5px 0 0 5px;
 }
 .project-links a {
   display: inline-block;
