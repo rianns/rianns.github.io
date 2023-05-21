@@ -7,8 +7,8 @@ repositories:
 
 ## Demo & Snippets
 
--   Include hosted link
--   Include images of app if CLI or Client App
+-   [Live link](https://rianns.github.io/)
+-   ![Live image of portfolio](./resources/assets/images/portfolio.png)
 
 ---
 
