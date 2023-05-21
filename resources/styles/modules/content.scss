@@ -49,6 +49,7 @@ main {
 
 	@include mixins.mobile {
 		height: 80vh;
+		padding: 0 30px;
 
 		&__header {
 			font-size: 5.5rem;
@@ -57,10 +58,6 @@ main {
 		&__para {
 			font-size: 1rem;
 		}
-	}
-
-	@include mixins.mobile {
-		padding: 0 30px;
 	}
 
 	@include mixins.tablet {
@@ -90,15 +87,6 @@ main {
 		width: 500px;
 	}
 
-	&__icon {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(3, 1fr);
-		grid-auto-flow: column;
-		grid-auto-columns: 1fr;
-		gap: 10px;
-	}
-
 	i {
 		border: 2px solid $secondary-color;
 		font-size: 6rem;
@@ -110,6 +98,15 @@ main {
 	i:hover {
 		box-shadow: 5px 5px white;
 		@include mixins.fade-out-fx;
+	}
+
+	&__icon {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-auto-flow: column;
+		grid-auto-columns: 1fr;
+		gap: 10px;
 	}
 
 	@include mixins.mobile {
@@ -200,6 +197,7 @@ main {
 			color: $tertiary-color;
 			background-color: $desc-bg;
 			opacity: 0;
+			width: 100%;
 
 			h3,
 			p {
@@ -269,11 +267,34 @@ main {
 			}
 		}
 	}
+	@include mixins.laptop {
+		&_proj {
+			&_desc {
+				h3 {
+					font-size: 1.6rem;
+				}
+				p {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+	@include mixins.desktop {
+		&_proj {
+			&_desc {
+				h3 {
+					font-size: 1.8rem;
+				}
+				p {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
 }
 
 .project-links {
 	color: $primary-text-color;
-	border-radius: 5px 0 0 5px;
 
 	a {
 		display: inline-block;
